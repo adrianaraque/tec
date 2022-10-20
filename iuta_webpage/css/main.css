@@ -15,7 +15,7 @@ header {
 nav{
     background: #fff;
     width: 100%;
-    border-bottom: 3px solid #edac07;
+    box-shadow: 2px 3px 10px #151564;
     height: 110px;
 }
 
@@ -25,7 +25,7 @@ nav{
 
 }
 .logo{
-    height: 110px;
+    height: 120px;
     text-align: center;
     padding-bottom: 15px;
 }
@@ -33,7 +33,7 @@ nav ul{
     float: right;
     margin-right: 20px;
     text-align: center;
-    padding-top:10px;
+    padding-top:15px;
 }
 nav ul li{
     display: inline-block;
@@ -41,15 +41,16 @@ nav ul li{
     margin: 0 5px;
 }
 nav ul li a{
-    color: #000090;
+    color: #151564;
     font-size: 18px;
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
     text-decoration: none;#edac07
 }
+
 li a.active, li a:hover{
-    background: #000090;
+    background: #151564;
     color: #fff;
     transition: .5s;
 }
@@ -58,8 +59,9 @@ li:hover {
     background-color: #;
 }
 .checkbtn{
+    padding-top: 20px;
     font-size: 30px;
-    color: #000090;
+    color: #151564;
     float: right;
     line-height: 80px;
     margin-right: 40px;
@@ -69,12 +71,11 @@ li:hover {
 #check{
     display: none;
 }
-section{
-    background: url(lopez.jpg);
-    background-size: cover;
-    background-position: center center;
-    height: calc(100vh - 20px);
+
+#carrusel {
+    padding-top: 80px;
 }
+
 
 @media (max-width: 952px){
     .enlace{
@@ -95,7 +96,7 @@ section{
         width: 100%;
         height: 100vh;
         background: #fff;
-        top: 70px;
+        top: 100px;
         left: -100%;
         text-align: center;
         transition: all .5s;
@@ -109,7 +110,7 @@ section{
         font-size: 20px;
     }
     li a:hover, li a.active{
-        background-color: #000090;
+        background-color: #151564;
         color: #fff;
     }
     #check:checked ~ ul{
@@ -127,7 +128,7 @@ section{
 /*:::::Pie de Pagina*/
 .pie-pagina{
     width: 100%;
-    background-color: #0a141d;
+    background-color: #0a1a2a;
 }
 .pie-pagina .grupo-1{
     width: 100%;
@@ -170,10 +171,10 @@ section{
     transition: all 300ms ease;
 }
 .pie-pagina .grupo-1 .red-social a:hover{
-    color: aqua;
+    color: yellow;
 }
 .pie-pagina .grupo-2{
-    background-color: #0a1a2a;
+    background-color: #0b0b5e;
     padding: 15px 10px;
     text-align: center;
     color: #fff;

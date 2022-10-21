@@ -24,6 +24,7 @@
     height: 70px;
     box-shadow: 1px 3px 1px rgb( 21, 21, 100);
     z-index: 1000;
+    width: 100%;
 }
 
 .menu__container{

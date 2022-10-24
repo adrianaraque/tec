@@ -338,7 +338,7 @@ body{
     font-size: 30px;
     line-height: 45px;
     color: #fff;
-    margin-right: 1px;
+    margin-right: 0px;
     background-color: #0d2033;
     text-align: center;
     transition: all 300ms ease;

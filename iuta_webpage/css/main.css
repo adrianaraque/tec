@@ -19,12 +19,20 @@
     padding-top: 10px;
 }
 
+.bienvenidos {
+    padding-top: 8px;
+    font-family: fantasy;
+    color: rgb( 21, 21, 100);
+    transform: rotate(0deg);
+}
+
 .menu{
     background-color: #fff;
     color: color: rgb( 21, 21, 100);
     height: 70px;
     box-shadow: 1px 3px 1px rgb( 21, 21, 100);
-    z-index: 1000;
+
+    
 }
 
 .menu__container{
@@ -39,13 +47,14 @@
     box-shadow: 1px 3px 10px rgb( 21, 21, 100);
     z-index: 1000;
     height: 70px;
+
 }
 
 .menu__links{
     height: 100%;
     transition: transform .5s;
     display: flex;
-    z-index: 1000;
+    
 
 }
 
@@ -55,12 +64,13 @@
     height: 100%;
     --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
     --transform: rotate(-90deg);
-    z-index: 1000;
+    
 }
 
 .menu__item:hover{
     --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     --transform: rotate(0);
+    
 }
 
 .menu__link{
@@ -71,11 +81,14 @@
     height: 80px;
     align-items: center;
     padding-top: 10px;
+    z-index: 1000;
+    
 }
 
 .menu__link:hover{
     background-color: rgb( 21, 21, 100);
     color: #fff;
+    
 }
 
 
@@ -102,16 +115,19 @@
     transform: translateY(100%);
     background-color: #fff;
     color: rgb( 21, 21, 100);
+    
 }
 
 .menu__link--inside{
     padding: 30px 100px 30px 20px;
     color: rgb( 21, 21, 100);
+    
 }
 
 .menu__link--inside:hover{
     background-color: rgb( 21, 21, 100);
     color: #fff;
+    
 }
 
 .menu__hamburguer{
@@ -119,6 +135,7 @@
     display: flex;
     align-items: center;
     padding: 0 15px;
+    
     cursor: pointer;
     display: none;
     background-color: rgb( 21, 21, 100);
@@ -127,25 +144,36 @@
 .menu__img{
     display: block;
     width: 36px;
+    
 }
 
 @media (max-width:800px){
     .menu__hamburguer{
         display: flex;
+        
+    }
+
+    .bienvenidos {
+        text-align: center;
     }
 
     .menu__item{
         --clip:0;
         overflow:hidden ;
+
+        
     }
 
     .menu__item--active{
         --transform: rotate(0);
         --background: #5e7094;
+        
     }
 
     .menu__item--show{
         background-color: var(--background);
+
+    
     }
 
 
@@ -162,23 +190,31 @@
         display: grid;
         grid-auto-rows: max-content;
         transform: translateX(100%);
+
+        
     }
 
     .menu__links--show{
         transform: unset;
         width: 100%;
         top: 70px;
+        
+        
     }
 
     .menu__link{
         padding: 25px 0;
         padding-left: 30px;
         height: auto;
+        z-index: 1000;
+
     }
+
 
     .menu__arrow{
         margin-left: auto;
         margin-right: 20px;
+        
     }
 
     .menu__nesting{
@@ -188,19 +224,50 @@
         transform: translateY(0);
         height: 0;
         transition: height .3s;
+        
+        
+
     }
 
     .menu__link--inside{
         width: 90%;
         margin-left: auto;
         border-left: 1px solid #798499;
+        
+        
     }
 }
 
+/*Carrusel 2 cards carreras*/
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+
+}
+
+.card {
+    margin: 0 2em;
+    width: calc(100%/3);
+}
 /*----------------CARDS-------*/
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
 
+.cuadro{
+    background-color: rgb( 21, 21, 100);
+}
+.parrafo {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    margin-left: 20px;
+    color: #fff;
+    text-align: left;
+}
+
+.iutaporque {
+    
+    height: 400px;
+}
 
 html, body{
     margin: 0;
@@ -222,7 +289,7 @@ body{
     color: rgb( 21, 21, 100);
     margin-top: 100px;
     font-weight: 100;
-    font-family: 'Roboto', sans-serif;
+    font-family: fantasy;
     text-shadow: 1px 1px 2px rgb( 21, 21, 100);
 }
 
@@ -363,6 +430,26 @@ body{
         grid-gap:30px;
         padding: 0px 0px;
 
+}
+
+.parrafo{
+    font-size: 15px;
+}
+
+.card {
+    height: ;
+    margin: 0 .2em;
+}
+
+.card-title {
+    font-size: 11px;
+}
+
+.card-text {
+    font-size: 11px;
+}
+.pie-pagina .grupo-3 .red-social a{
+    font-size: 20px;
 }
 
 .title {
